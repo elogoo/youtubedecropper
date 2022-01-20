@@ -1,0 +1,20 @@
+{
+
+  "description": "Decrops images on youtube when you right click and view the image in a new tab",
+  "manifest_version": 2,
+  "name": "Youtubedecropper",
+  "version": "1.0",
+  "homepage_url": "https://youtube.com",
+  "author": "Elogo",
+  "icons": {
+    "48": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.ggpht.com/*"],
+      "js": ["youtubedecropper.js"]
+    }
+  ]
+
+}
